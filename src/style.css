@@ -1,0 +1,37 @@
+:root {
+  --ion-color-primary: #315c9b;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-background-color: #f3f5f7;
+  --ion-text-color: #26313d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body { margin: 0; background: #f3f5f7; }
+.page-wrap { width: min(100% - 32px, 430px); min-height: 100%; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; padding: 24px 0; box-sizing: border-box; }
+.page-wrap-wide { width: min(100% - 32px, 720px); }
+.auth-card, .welcome-card, .profile-card { background: #fff; border: 1px solid #dfe4e8; border-radius: 8px; padding: 28px; box-shadow: 0 2px 8px #26313d12; }
+.auth-card { text-align: center; }
+.brand-mark, .welcome-icon { width: 54px; height: 54px; display: grid; place-items: center; margin: 0 auto 16px; border-radius: 50%; color: #315c9b; background: #e7eef8; font-size: 30px; }
+h1 { margin: 0 0 8px; color: #26313d; font-size: 25px; font-weight: 600; }
+.subtitle, .welcome-card p, .profile-heading p { margin: 0 0 24px; color: #65717d; font-size: 14px; line-height: 1.5; }
+ion-item { --background: #f8f9fa; --border-color: #e1e5e9; margin: 10px 0; border: 1px solid #e1e5e9; border-radius: 5px; }
+ion-label { color: #475461 !important; font-size: 13px !important; }
+.main-button { margin-top: 22px; --border-radius: 5px; text-transform: none; font-weight: 600; }
+.text-button { margin-top: 20px; border: 0; background: transparent; color: #315c9b; cursor: pointer; font-size: 13px; }
+.demo-note { margin: 22px 0 0; color: #8a6b27; background: #fff7df; border: 1px solid #f0dfaa; border-radius: 5px; padding: 10px; font-size: 12px; line-height: 1.4; }
+.welcome-card { text-align: center; }
+.eyebrow { color: #315c9b !important; margin-bottom: 7px !important; font-size: 12px !important; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
+.welcome-card .main-button { width: 190px; margin-left: auto; margin-right: auto; }
+.profile-heading { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
+.profile-heading h1 { font-size: 21px; margin-bottom: 4px; }
+.profile-heading p { margin: 0; font-size: 13px; }
+.avatar { flex: 0 0 64px; width: 64px; height: 64px; border-radius: 50%; background: #e7eef8 center/cover no-repeat; display: grid; place-items: center; color: #315c9b; font-size: 42px; overflow: hidden; }
+.photo-button { margin-left: auto; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 5px; color: #315c9b; background: #e7eef8; cursor: pointer; font-size: 20px; }
+.photo-button input { display: none; }
+.feedback { width: min(100% - 16px, 680px); margin: 14px auto 0; padding: 10px 12px; border-radius: 5px; font-size: 13px; text-align: center; }
+.success { color: #28613e; background: #e8f5ec; }
+.error { color: #943b3b; background: #fdecec; }
+.topbar ion-toolbar { --background: #fff; --border-color: #dfe4e8; }
+.topbar ion-title { color: #26313d; font-size: 18px; }
+.topbar ion-button { text-transform: none; font-size: 14px; }
+@media (max-width: 480px) { .auth-card, .welcome-card, .profile-card { padding: 22px 18px; } }
